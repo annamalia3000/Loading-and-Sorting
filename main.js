@@ -61,6 +61,9 @@ function sortData(field, order) {
     }
   });
   rows.forEach(row => tableBody.appendChild(row));
+  document.querySelectorAll('th').forEach(th => th.classList.remove('sort-asc', 'sort-desc'));
+  const sortedTh = document.querySelector(`th[data-sort="${field}"]`);
+  sortedTh.classList.add(order === 'asc' ? 'sort-asc' : 'sort-desc');
 }
 function changeSortOrder() {
   const {
