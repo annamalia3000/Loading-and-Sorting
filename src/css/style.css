@@ -1,8 +1,7 @@
 body, html {
     height: 100%;
     margin: 0;
-
-  }
+}
 
 table {
     width: auto;
@@ -18,7 +17,6 @@ th, td {
 
 .movie-id {
     width: 20%;
-
 }
 
 .movie-title {
@@ -27,12 +25,10 @@ th, td {
 
 .movie-year {
     width: 20%;
-
 }
 
 .movie-imdb {
     width: 15%;
-
 }
 
 th.sort-asc::after {
